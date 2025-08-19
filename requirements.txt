@@ -1,0 +1,9 @@
+# Core dependencies
+numpy>=1.19.0
+typing-extensions>=3.7.4; python_version<"3.8"
+
+# Optional dependencies (will be installed based on extras_require)
+# torch>=1.9.0  # [torch]
+# tensorflow>=2.6.0  # [tensorflow]  
+# onnxruntime>=1.8.0  # [onnx]
+# psutil>=5.8.0  # [monitoring] - recommended for device profiling
