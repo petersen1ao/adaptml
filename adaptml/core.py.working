@@ -338,10 +338,9 @@ class AdaptiveInference:
             "config": self.config
         }
 
-def create_demo_models(inference: 'AdaptiveInference' = None) -> Dict[str, str]:
+def create_demo_models() -> Dict[str, str]:
     """Create demo models for testing"""
-    if inference is None:
-        inference = AdaptiveInference()
+    inference = AdaptiveInference()
     models = {}
     
     # Register mock models
@@ -374,7 +373,7 @@ def quickstart():
     
     # Create demo models
     print("📦 Creating demo models...")
-    models = create_demo_models(inference)
+    models = create_demo_models()
     print(f"✅ Created {len(models)} demo models")
     
     # Test inference
