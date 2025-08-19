@@ -178,15 +178,15 @@ optimized_model = optimizer.generate_optimal_model(training_data)  # Enterprise
 - **Custom optimizations** - Hardware-specific accelerations
 - **Priority support** - SLA guarantees and dedicated team
 
-## 💼 Enterprise Success Stories
+## 💼 Success Stories
 
-> "AdaptML Enterprise reduced our inference costs by 75% while improving response times by 4x. The ROI was immediate."
+> "AdaptML Enterprise reduced our costs by 75% while improving response times by 4x. The ROI was immediate."
 > 
-> — *CTO, Fortune 500 Tech Company*
+> — *
 
 > "The automated model optimization saved us 6 months of manual tuning work."
 > 
-> — *ML Engineering Lead, Unicorn Startup*
+> — *
 
 ## 🎮 Try It Now
 
