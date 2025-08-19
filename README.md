@@ -159,10 +159,6 @@ Check out our [examples directory](./examples/) for:
 - Time series prediction
 - Edge device deployment
 
-## 🤝 Contributing
-
-We love contributions! See our [Contributing Guide](CONTRIBUTING.md) for details.
-
 ### Quick Start
 1. Fork the repo
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -187,10 +183,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🌐 **Website**: [https://adaptml-web-showcase.lovable.app/](https://adaptml-web-showcase.lovable.app/)
 - 📧 **Email**: [info2adaptml@gmail.com](mailto:info2adaptml@gmail.com)
-- 💬 **Discord**: [Join our community](https://discord.gg/adaptml)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/petersen1ao/adaptml/issues)
-- 📖 **Docs**: [Documentation](https://adaptml.readthedocs.io)
-- 🐦 **Twitter**: [@AdaptML](https://twitter.com/adaptml)
 
 ---
 
