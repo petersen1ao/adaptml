@@ -1,15 +1,3 @@
 # Core dependencies
 numpy>=1.21.0
 psutil>=5.8.0
-
-# Optional ML framework dependencies
-torch>=1.9.0; extra == "torch"
-tensorflow>=2.6.0; extra == "tensorflow"
-onnxruntime>=1.8.0; extra == "onnx"
-
-# Development dependencies
-pytest>=6.0.0; extra == "dev"
-pytest-cov>=2.12.0; extra == "dev"
-black>=21.0.0; extra == "dev"
-flake8>=3.9.0; extra == "dev"
-mypy>=0.910; extra == "dev"
