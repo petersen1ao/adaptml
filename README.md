@@ -182,8 +182,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support & Contact
 
 - 🌐 **Website**: [https://adaptml-web-showcase.lovable.app/](https://adaptml-web-showcase.lovable.app/)
-- 📧 **Email**: [info2adaptml@gmail.com](mailto:info2adaptml@gmail.com)
-
+- 📧 **Email**: [info2adaptml@gmail.com](mailto:info2adaptml@gmail.com) -- Email for lighter to more advanced models
+  
 ---
 
 ⭐ **Star us on GitHub** — it motivates us a lot!
