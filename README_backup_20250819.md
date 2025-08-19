@@ -12,9 +12,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![CI](https://github.com/petersen1ao/adaptml/workflows/CI/badge.svg)](https://github.com/petersen1ao/adaptml/actions)
 
-[📖 Docs](https://github.com/petersen1ao/adaptml/wiki) | [�� Demo](https://colab.research.google.com/drive/adaptml-demo) | [📊 Benchmarks](./benchmarks) | [💼 Enterprise](https://adaptml-web-showcase.lovable.app/) | [📧 Contact](mailto:info2adaptml@gmail.com)
-
-> **⚠️ Important**: This is the **Community Edition**. [Enterprise features](#-edition-comparison) are available separately.
+[📖 Docs](https://github.com/petersen1ao/adaptml/wiki) | [🎮 Demo](https://colab.research.google.com/drive/adaptml-demo) | [📊 Benchmarks](./benchmarks) | [💬 Discord](https://discord.gg/adaptml) | [🐦 Twitter](https://twitter.com/adaptml)
 
 ## 🚀 See It In Action (30 seconds)
 
@@ -32,33 +30,7 @@ result = system.predict("small", data)  # Uses small model if sufficient
 print(f"Saved {result.cost:.4f} on this inference!")
 ```
 
-## 📊 Edition Comparison
-
-| Feature | Community (Open Source) | Enterprise |
-|---------|------------------------|------------|
-| **Core Features** | | |
-| Basic Adaptive Inference | ✅ | ✅ |
-| PyTorch/TensorFlow/ONNX Support | ✅ | ✅ |
-| Single Node Operation | ✅ | ✅ |
-| Basic Cost Optimization | ✅ | ✅ |
-| Device Profiling | ✅ | ✅ |
-| **Advanced Features** | | |
-| Multi-Node Orchestration | ❌ | ✅ |
-| AutoML Model Generation | ❌ | ✅ |
-| Real-time Analytics Dashboard | ❌ | ✅ |
-| A/B Testing Framework | ❌ | ✅ |
-| Advanced Caching | ❌ | ✅ |
-| **Enterprise** | | |
-| Custom Hardware Optimization | ❌ | ✅ |
-| Cloud-Native Autoscaling | ❌ | ✅ |
-| Enterprise Security (SSO) | ❌ | ✅ |
-| SLA Guarantees | ❌ | ✅ |
-| Priority Support | ❌ | ✅ |
-| **Pricing** | Free | [Contact Sales](mailto:info2adaptml@gmail.com) |
-
-**This repository contains ONLY the Community Edition.** [See full limitations](LIMITATIONS.md)
-
-## 💰 Real-World Results (Community Edition)
+## 📊 Real-World Results
 
 ### 💰 Cost Savings
 | Company Type | Before | After | Monthly Savings |
@@ -73,8 +45,6 @@ print(f"Saved {result.cost:.4f} on this inference!")
 | P50 Latency | 100ms | 45ms | **2.2x faster** |
 | P95 Latency | 500ms | 120ms | **4.2x faster** |
 | Battery Life (Mobile) | 4 hours | 12 hours | **3x longer** |
-
-*Enterprise customers see up to 75% cost reduction and 5x performance improvements with advanced features.*
 
 ## 📦 Installation
 
@@ -114,7 +84,7 @@ AdaptML intelligently routes requests to the optimal model based on:
 - **Latency targets** ⚡ Meet speed requirements
 - **Device capabilities** 📱 Optimize for mobile/edge
 
-## 🏃‍♂️ Quick Start (Community Edition)
+## 🏃‍♂️ Quick Start
 
 ### 1. Basic Usage
 ```python
@@ -137,6 +107,12 @@ small_model_id = inference.register_model(
     metadata={"cost_per_inference": 0.001}
 )
 
+large_model_id = inference.register_model(
+    name="accurate-classifier", 
+    model_data=your_large_model,
+    metadata={"cost_per_inference": 0.01}
+)
+
 # Use it!
 result = inference.predict(small_model_id, input_data)
 print(f"Prediction: {result.prediction}")
@@ -144,49 +120,59 @@ print(f"Cost: ${result.cost:.6f}")
 print(f"Latency: {result.latency:.3f}s")
 ```
 
-### 2. Enterprise Features (Preview)
+### 2. Advanced Configuration
 ```python
-# These features require Enterprise Edition
-from adaptml.enterprise import DistributedInference, AutoMLOptimizer  # Enterprise only
+from adaptml import AdaptiveInference, AdaptiveConfig, DeviceType
 
-# Multi-node orchestration
-distributed = DistributedInference(nodes=["node1", "node2", "node3"])  # Enterprise
+# Advanced configuration
+config = AdaptiveConfig(
+    cost_threshold=0.005,
+    latency_threshold=0.5,
+    quality_threshold=0.95,
+    device_preference=DeviceType.GPU,
+    prefer_accuracy=True
+)
 
-# Automatic model optimization
-optimizer = AutoMLOptimizer()  # Enterprise
-optimized_model = optimizer.generate_optimal_model(training_data)  # Enterprise
+inference = AdaptiveInference(config)
 
-# Contact info2adaptml@gmail.com for access
+# Register models with detailed metadata
+inference.register_model(
+    name="nano-model",
+    model_data=nano_model,
+    metadata={
+        "accuracy": 0.85,
+        "cost_per_1k": 0.10,
+        "avg_latency_ms": 50,
+        "model_size_mb": 10
+    }
+)
 ```
 
 ## 🔧 Features
 
-### ✨ **Community Edition Features**
+### ✨ **Adaptive Model Selection**
 - **Smart routing** based on confidence requirements
 - **Cost optimization** - automatically use cheapest sufficient model
 - **Latency optimization** - meet speed requirements
 - **Quality thresholds** - maintain accuracy standards
-- **PyTorch/TensorFlow/ONNX** - Standard framework support
-- **CPU/GPU support** - Basic device optimization
 
-### 🚀 **Enterprise Features** ([Contact Sales](mailto:info2adaptml@gmail.com))
-- **Distributed orchestration** - Multi-node coordination and load balancing
-- **AutoML integration** - Automatic model generation and optimization
-- **Advanced analytics** - Real-time dashboards and insights
-- **A/B testing** - Compare model performance in production
-- **Enterprise security** - SSO, audit logs, compliance
-- **Custom optimizations** - Hardware-specific accelerations
-- **Priority support** - SLA guarantees and dedicated team
+### ��️ **Framework Support**
+- **PyTorch** - Native support for torch models
+- **TensorFlow** - Keras and SavedModel support  
+- **ONNX** - Cross-platform model support
+- **Custom engines** - Bring your own inference
 
-## 💼 Enterprise Success Stories
+### 📱 **Device Optimization**
+- **CPU optimization** - Efficient on standard hardware
+- **GPU acceleration** - CUDA support when available
+- **Edge deployment** - Mobile and IoT ready
+- **Cloud scaling** - Works with any cloud provider
 
-> "AdaptML Enterprise reduced our inference costs by 75% while improving response times by 4x. The ROI was immediate."
-> 
-> — *CTO, Fortune 500 Tech Company*
-
-> "The automated model optimization saved us 6 months of manual tuning work."
-> 
-> — *ML Engineering Lead, Unicorn Startup*
+### 📊 **Monitoring & Analytics**
+- **Cost tracking** - Real-time spend monitoring
+- **Performance metrics** - Latency and throughput tracking
+- **Model utilization** - See which models are used when
+- **Savings reports** - Quantify your cost reductions
 
 ## 🎮 Try It Now
 
@@ -209,66 +195,56 @@ python quickstart.py
 cost_traditional = 1000 * 0.01  # 1000 requests at $0.01 each
 # Result: $10.00
 
-# With AdaptML Community
+# With AdaptML
 cost_adaptml = (800 * 0.001) + (200 * 0.01)  # 80% small, 20% large
 # Result: $2.80 (72% savings!)
-
-# With AdaptML Enterprise
-cost_enterprise = (900 * 0.0005) + (100 * 0.01)  # Advanced optimization
-# Result: $1.45 (85% savings!)
 ```
+
+### Real User Savings
+- **TechCorp**: Reduced monthly inference costs from $45K to $18K
+- **AI Startup**: Cut mobile app battery usage by 3x
+- **Enterprise**: Improved API response times by 60%
 
 ## 🤝 Contributing
 
-We welcome contributions to the **Community Edition**! 
-
-### ✅ What We Accept
-- Bug fixes and improvements to existing community features
-- Documentation improvements
-- New framework integrations (basic level)
-- Performance improvements to open source components
-- Test coverage improvements
-
-### ❌ What We DON'T Accept
-- PRs attempting to add Enterprise features
-- Reverse-engineered proprietary algorithms
-- Requests for advanced features in issues
-
-**Enterprise feature requests → [Contact us](mailto:info2adaptml@gmail.com)**
+We welcome contributions! Here's how to get started:
 
 ### Quick Start
 1. Fork the repo
-2. Create your feature branch (`git checkout -b feature/CommunityFeature`)  
-3. Commit your changes (`git commit -m 'Add community feature'`)
-4. Push to the branch (`git push origin feature/CommunityFeature`)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)  
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+### First Time Contributors
+Look for issues tagged with `good first issue` or `help wanted`.
+
+### Development Setup
+```bash
+git clone https://github.com/petersen1ao/adaptml.git
+cd adaptml
+pip install -e .[dev]
+pytest tests/
+```
 
 ## 📚 Documentation
 
-- **[API Reference](docs/api.md)** - Complete Community Edition API
+- **[API Reference](docs/api.md)** - Complete API documentation
 - **[Examples](examples/)** - Real-world usage examples
-- **[Limitations](LIMITATIONS.md)** - Community vs Enterprise differences
-- **[Enterprise Docs](https://adaptml-web-showcase.lovable.app/)** - Advanced features documentation
+- **[Architecture](docs/architecture.md)** - How AdaptML works under the hood
+- **[Deployment](docs/deployment.md)** - Production deployment guide
 
 ## 🆘 Support
 
-### Community Support
+### Community
 - **[GitHub Issues](https://github.com/petersen1ao/adaptml/issues)** - Bug reports and feature requests
 - **[Discussions](https://github.com/petersen1ao/adaptml/discussions)** - Community help and ideas
+- **[Discord](https://discord.gg/adaptml)** - Real-time chat and support
 
-### Enterprise Support
-- 📧 **Email**: info2adaptml@gmail.com
-- 🌐 **Website**: https://adaptml-web-showcase.lovable.app/
-- 💬 **Enterprise Sales**: Schedule a demo
-- 🆘 **Priority Support**: 99.9% SLA with dedicated team
-
-## ⚖️ Legal
-
-- Community Edition is MIT licensed for maximum flexibility
-- **"AdaptML"** is a trademark of AdaptML Team
-- Enterprise features are proprietary and patent-protected
-- Patents pending on core optimization techniques
-- Contributions subject to our [Contributor License Agreement](CONTRIBUTING.md)
+### Professional Support
+- **Email**: info2adaptml@gmail.com
+- **Website**: https://adaptml-web-showcase.lovable.app/
+- **Enterprise**: Contact us for custom solutions and SLA
 
 ## ⭐ Star History
 
@@ -278,12 +254,14 @@ We welcome contributions to the **Community Edition**!
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Enterprise features are available under commercial license.**
+## 🙏 Acknowledgments
+
+- Inspired by the need for cost-effective AI inference
+- Built with ❤️ for the ML community
+- Thanks to all our contributors and users
 
 ---
 
 **Ready to save 50% on AI inference costs?** [Get started now!](#-installation)
-
-**Need enterprise features?** [Contact our sales team!](mailto:info2adaptml@gmail.com)
 
 *Built with ❤️ by the AdaptML team* | **Email**: info2adaptml@gmail.com | **Website**: https://adaptml-web-showcase.lovable.app/

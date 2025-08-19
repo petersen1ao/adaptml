@@ -1,17 +1,11 @@
-#!/usr/bin/env python3
 """
-Copyright (c) 2024 AdaptML Team. All rights reserved.
-
-AdaptML - Community Edition
+AdaptML - Adaptive Inference Open Source Edition
 Cut AI inference costs by 50% with adaptive model selection
 
-This is the Community Edition under MIT License.
-Enterprise features available at: https://adaptml-web-showcase.lovable.app/
-Contact: info2adaptml@gmail.com
-
-NOTICE: This file contains proprietary algorithms. Reverse engineering
-or commercial redistribution without permission is prohibited.
-Patents pending on core optimization techniques.
+GitHub: https://github.com/petersen1ao/adaptml
+Website: https://adaptml-web-showcase.lovable.app/
+Email: info2adaptml@gmail.com
+License: MIT
 """
 
 import time
