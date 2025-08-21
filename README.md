@@ -76,6 +76,8 @@ print(f"Saved {result.cost:.4f} on this inference!")
 
 *Enterprise customers see up to 75% cost reduction and 5x performance improvements with advanced features.*
 
+Explaination Video: https://youtu.be/o9I1-gU6ALE
+
 ## 📦 Installation
 
 ```bash
