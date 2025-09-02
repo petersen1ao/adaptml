@@ -48,17 +48,25 @@ def demonstrate_cost_savings():
         
         # Run adaptive inference
         start_time = time.time()
-        result = ai.infer(data, target_confidence=confidence)
+        
+        # Register a mock model for demonstration
+        model_id = ai.register_model(
+            name=f"demo-model-{confidence}",
+            model_data={"type": "mock", "confidence": confidence},
+            metadata={"cost_per_inference": 0.001 * confidence}
+        )
+        
+        result = ai.predict(model_id, data)
         latency = (time.time() - start_time) * 1000
         
         # Calculate costs (simulated)
         traditional_cost = 0.50  # Always use large model
-        adaptive_cost = result.estimated_cost
+        adaptive_cost = result.cost
         
         total_traditional_cost += traditional_cost
         total_adaptive_cost += adaptive_cost
         
-        print(f"   Model used: {result.model_name}")
+        print(f"   Model used: {result.model_used}")
         print(f"   Confidence: {result.confidence:.1%}")
         print(f"   Latency: {latency:.1f}ms")
         print(f"   Cost: ${adaptive_cost:.4f} vs ${traditional_cost:.4f} (traditional)")

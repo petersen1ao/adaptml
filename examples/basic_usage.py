@@ -7,6 +7,11 @@ Contact: info2adaptml@gmail.com
 Website: https://adaptml-web-showcase.lovable.app/
 """
 
+import sys
+import os
+# Add the parent directory to path to import adaptml
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from adaptml import AdaptiveInference, AdaptiveConfig
 
 def main():
