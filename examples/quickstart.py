@@ -11,7 +11,7 @@ from adaptml import AdaptiveInference, ModelSize, AdaptiveConfig
 async def main():
     """Quick start example showing adaptive inference in action"""
     
-    print("🚀 AdaptML Quick Start")
+    print("AdaptML Quick Start")
     print("=" * 50)
     
     # 1. Create the adaptive inference system
@@ -21,7 +21,7 @@ async def main():
         enable_caching=True
     )
     system = AdaptiveInference(config)
-    print(f"✅ Initialized system on {system.device_type.value}")
+    print(f"Initialized system on {system.device_type.value}")
     
     # 2. Create some demo models (if PyTorch is available)
     try:
@@ -31,18 +31,18 @@ async def main():
         for size, model in models.items():
             system.register_model(model, size)
         
-        print("✅ Registered 3 demo PyTorch models")
+        print("Registered 3 demo PyTorch models")
     except ImportError:
-        print("⚠️  PyTorch not available, using mock models")
+        print("PyTorch not available, using mock models")
         # Register mock models for demo
         system.register_model(lambda x: (x * 0.1, 0.7), ModelSize.SMALL)
         system.register_model(lambda x: (x * 0.5, 0.85), ModelSize.MEDIUM)
         system.register_model(lambda x: (x * 1.0, 0.95), ModelSize.LARGE)
-        print("✅ Registered 3 mock models")
+        print("Registered 3 mock models")
     
     # 3. Generate test data
     test_data = np.random.randn(1, 10).astype(np.float32)
-    print(f"📊 Generated test data: {test_data.shape}")
+    print(f"Generated test data: {test_data.shape}")
     
     print("\n" + "=" * 50)
     print("Running AdaptML Examples")

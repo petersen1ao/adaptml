@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Basic AdaptML Usage Example
+AdaptML Basic Usage Example
 
 This example shows how to set up AdaptML for cost-effective inference.
 Contact: info2adaptml@gmail.com
@@ -10,7 +10,7 @@ Website: https://adaptml-web-showcase.lovable.app/
 from adaptml import AdaptiveInference, AdaptiveConfig
 
 def main():
-    print("🚀 AdaptML Basic Usage Example")
+    print("AdaptML Basic Usage Example")
     print("=" * 40)
     
     # Configure for cost optimization
@@ -54,18 +54,18 @@ def main():
         print(f"   Cost: ${result.cost:.6f}")
         print(f"   Latency: {result.latency:.3f}s")
     
-    print(f"\n💰 Total cost: ${total_cost:.6f}")
-    print(f"📊 Average cost per request: ${total_cost/len(test_inputs):.6f}")
+    print(f"\nTotal cost: ${total_cost:.6f}")
+    print(f"Average cost per request: ${total_cost/len(test_inputs):.6f}")
     
     # Show system stats
     stats = inference.get_stats()
-    print(f"\n📈 System Statistics:")
+    print(f"\nSystem Statistics:")
     print(f"   Models registered: {stats['registered_models']}")
     print(f"   Available engines: {', '.join(stats['available_engines'])}")
     
-    print(f"\n📞 Contact us:")
-    print(f"   📧 Email: info2adaptml@gmail.com")
-    print(f"   🌐 Website: https://adaptml-web-showcase.lovable.app/")
+    print(f"\nContact us:")
+    print(f"   Email: info2adaptml@gmail.com")
+    print(f"   Website: https://adaptml-web-showcase.lovable.app/")
 
 if __name__ == "__main__":
     main()
