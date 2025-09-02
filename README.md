@@ -474,10 +474,10 @@ AdaptML is released under the [MIT License](LICENSE).
 
 ## 🔗 **Links**
 
-- **🌐 Website**: [adaptml.dev](https://adaptml.dev)
+- **🌐 Website**: [https://adaptml-web-showcase.lovable.app/](https://adaptml-web-showcase.lovable.app/)
 - **📖 Documentation**: [docs.adaptml.dev](https://docs.adaptml.dev)
 - **🐙 GitHub**: [github.com/petersen1ao/AdaptML](https://github.com/petersen1ao/AdaptML)
-- **📧 Contact**: [hello@adaptml.dev](mailto:info2adaptml@gmail.com)
+- **📧 Contact**: [info2adaptml@gmail.com](mailto:info2adaptml@gmail.com)
 
 ---
 
