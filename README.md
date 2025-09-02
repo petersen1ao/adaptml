@@ -421,7 +421,7 @@ We welcome contributions! See our [Contributing Guide](CONTRIBUTING.md) for deta
 
 Try AdaptML instantly with our online demo:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/petersen1ao/AdaptML/blob/main/demo/AdaptML_Demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/petersen1ao/adaptml/blob/main/examples/AdaptML_Enterprise_Demo.ipynb)
 
 ### **📦 Installation Options**
 
@@ -442,7 +442,7 @@ docker run -p 8080:8080 adaptml/adaptml:latest
 
 ### **🎯 Next Steps**
 
-1. **🚀 [Try the Demo](https://colab.research.google.com/github/petersen1ao/AdaptML/blob/main/demo/AdaptML_Demo.ipynb)** - Experience AdaptML in action
+1. **🚀 [Try the Demo](https://colab.research.google.com/github/petersen1ao/adaptml/blob/main/examples/AdaptML_Enterprise_Demo.ipynb)** - Experience AdaptML in action
 2. **📖 [Read the Docs](docs/getting-started.md)** - Comprehensive setup guide
 3. **🔧 [Install Locally](docs/installation.md)** - Set up your development environment
 4. **💼 [Enterprise Contact](mailto:info2adaptml@gmail.com)** - Discuss business needs
