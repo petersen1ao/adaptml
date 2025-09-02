@@ -30,6 +30,8 @@ __version__ = "0.1.0"
 __author__ = "AdaptML Team"
 __email__ = "info2adaptml@gmail.com"
 __website__ = "https://adaptml-web-showcase.lovable.app/"
+__email__ = "info2adaptml@gmail.com"
+__website__ = "https://adaptml-web-showcase.lovable.app/"
 
 __all__ = [
     "AdaptiveInference",
