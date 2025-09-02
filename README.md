@@ -6,6 +6,7 @@
 ![Performance](https://img.shields.io/badge/Performance-Significantly%20Enhanced-red?style=for-the-badge)
 ![Cost Reduction](https://img.shields.io/badge/Cost%20Reduction-Substantial-green?style=for-the-badge)
 ![Security](https://img.shields.io/badge/Security-Enterprise%20Grade-blue?style=for-the-badge)
+[![Enterprise-CI](https://github.com/petersen1ao/adaptml/actions/workflows/enterprise-ci.yml/badge.svg)](https://github.com/petersen1ao/adaptml/actions/workflows/enterprise-ci.yml)
 
 ---
 
