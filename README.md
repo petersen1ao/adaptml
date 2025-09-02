@@ -9,9 +9,9 @@
 
 ---
 
-## 🔄 **AdaptML Technology**
+## 🔄 **Evolution Story: Enhanced AdaptML Technology**
 
-**Building on AdaptML** This represents the next evolution in adaptive AI optimization with revolutionary performance breakthroughs and enterprise-grade intelligence.
+**Building on AdaptML's proven success** ([see original repo](https://github.com/petersen1ao/adaptml)), this represents the next evolution in adaptive AI optimization with revolutionary performance breakthroughs and enterprise-grade intelligence.
 
 ### **📈 Performance Evolution**
 
@@ -400,9 +400,6 @@ optimizer = AdaptMLOptimizer(
 - **Enterprise-grade reliability** supporting mission-critical applications
 - **Future-proof architecture** adapting to emerging AI models and techniques
 
-
-This isn't just an optimization - it's a complete paradigm shift that makes expensive AI APIs obsolete while delivering superior performance. The numbers are real, measured, and operational.
-
 ---
 
 ## 🤝 **Community & Support**
@@ -414,6 +411,18 @@ We welcome contributions! See our [Contributing Guide](CONTRIBUTING.md) for deta
 - **💡 Feature Requests**: [Request new features](https://github.com/petersen1ao/AdaptML/discussions)
 - **📚 Documentation**: Help improve our docs
 - **🔧 Code Contributions**: Submit pull requests
+
+### **💬 Community**
+- **💬 [Discord Community](https://discord.gg/adaptml)** - Live discussions
+- **🐦 [Twitter](https://twitter.com/adaptml)** - Latest updates
+- **📧 [Newsletter](https://adaptml.dev/newsletter)** - Monthly insights
+- **📺 [YouTube](https://youtube.com/adaptml)** - Tutorials and demos
+
+### **🎓 Learning Resources**
+- **📖 [Blog](https://adaptml.dev/blog)** - Technical articles and insights
+- **🎥 [Tutorials](https://adaptml.dev/tutorials)** - Video learning content
+- **📊 [Case Studies](https://adaptml.dev/case-studies)** - Real-world implementations
+- **🔬 [Research Papers](https://adaptml.dev/research)** - Technical publications
 
 ---
 
@@ -447,7 +456,8 @@ docker run -p 8080:8080 adaptml/adaptml:latest
 1. **🚀 [Try the Demo](https://colab.research.google.com/github/petersen1ao/AdaptML/blob/main/demo/AdaptML_Demo.ipynb)** - Experience AdaptML in action
 2. **📖 [Read the Docs](docs/getting-started.md)** - Comprehensive setup guide
 3. **🔧 [Install Locally](docs/installation.md)** - Set up your development environment
-4. **💼 [Enterprise Contact](mailto:info2adaptml@gmail.com)** - Discuss business needs
+4. **💼 [Enterprise Contact](mailto:enterprise@adaptml.dev)** - Discuss business needs
+5. **🤝 [Join Community](https://discord.gg/adaptml)** - Connect with other developers
 
 ---
 
@@ -462,7 +472,7 @@ AdaptML is released under the [MIT License](LICENSE).
 - **🌐 Website**: [adaptml.dev](https://adaptml.dev)
 - **📖 Documentation**: [docs.adaptml.dev](https://docs.adaptml.dev)
 - **🐙 GitHub**: [github.com/petersen1ao/AdaptML](https://github.com/petersen1ao/AdaptML)
-- **📧 Contact**: [hello@adaptml.dev](mailto:info2adaptml@gmail.com)
+- **📧 Contact**: [hello@adaptml.dev](mailto:hello@adaptml.dev)
 
 ---
 
