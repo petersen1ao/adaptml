@@ -1,24 +1,67 @@
-# Core dependencies
-numpy>=1.21.0
-psutil>=5.8.0
+# Production Test Framework Requirements
+# For deployment handling 1000+ requests per minute
 
-# Unified QLoRA System dependencies
-torch>=2.0.0
-transformers>=4.35.0
-peft>=0.6.0
-bitsandbytes>=0.41.0
-accelerate>=0.24.0
-datasets>=2.14.0
+# Testing Framework
+pytest>=7.4.0
+pytest-asyncio>=0.21.1
+pytest-xdist>=3.3.1  # Parallel test execution
+pytest-benchmark>=4.0.0  # Performance benchmarking
+pytest-html>=3.2.0  # HTML test reports
+pytest-cov>=4.1.0  # Code coverage
 
-# Security and performance
+# Async and Concurrency
+asyncio-mqtt>=0.13.0
+aiohttp>=3.8.5
+uvloop>=0.17.0  # High-performance event loop
+
+# Performance and Monitoring
+psutil>=5.9.5  # System resource monitoring
+memory-profiler>=0.60.0
+line-profiler>=4.1.0
+py-spy>=0.3.14  # Sampling profiler
+
+# Data Analysis and Visualization
+numpy>=1.24.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Security Testing
 cryptography>=41.0.0
 requests>=2.31.0
+urllib3>=2.0.0
 
-# Optional ML frameworks
-tensorflow>=2.13.0; extra == "tensorflow"
-onnxruntime>=1.16.0; extra == "onnx"
+# Database and Storage
+# sqlite3 is built into Python
+redis>=4.6.0
+pymongo>=4.4.0
 
-# Development dependencies
-pytest>=7.4.0; extra == "dev"
-black>=23.9.0; extra == "dev"
-isort>=5.12.0; extra == "dev"
+# Logging and Monitoring
+structlog>=23.1.0
+rich>=13.4.0  # Rich console output
+prometheus-client>=0.17.0
+
+# Machine Learning (for test pattern evolution)
+scikit-learn>=1.3.0
+torch>=2.0.0  # For compatibility with SUT
+transformers>=4.30.0
+
+# Enterprise Features
+pydantic>=2.0.0  # Data validation
+fastapi>=0.100.0  # For test API endpoints
+uvicorn>=0.23.0  # ASGI server
+
+# Development and Debugging
+black>=23.0.0  # Code formatting
+isort>=5.12.0  # Import sorting
+mypy>=1.5.0  # Type checking
+bandit>=1.7.0  # Security linting
+
+# Additional API Dependencies
+httpx>=0.25.0
+python-dotenv>=1.0.0
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
+
+# Enhanced Data Processing
+scipy>=1.9.0
